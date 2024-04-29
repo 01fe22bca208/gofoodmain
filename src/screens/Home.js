@@ -244,9 +244,9 @@ export default function Home() {
                                       .filter((item) => (item.CategoryName === data.CategoryName)    && (item.name.toLowerCase().includes(search.toLocaleLowerCase()))) 
                                       .map((filterItems) => (
                                           <div key={filterItems._id} className="col-12 col-md-6 col-lg-4 mb-3">
-                                              <Card foodName={filterItems.name}
+                                              <Card foodItem={filterItems}
                                                options={filterItems.options[0]}
-                                               imgSrc = {filterItems.img}
+                                              
                                                ></Card>
                                           </div>
                                       ))

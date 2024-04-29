@@ -43,6 +43,11 @@ app.use(express.json());
 // Routes
 app.use('/api', createuserRouter);
 app.use('/api',require("./Routes/DisplayData"));
+app.use('/api',require("./Routes/OrderData"));
+// app.get('/',(req,res)=>{
+//   res.send('HELLO world!')
+// })
+
 
 
 // Start the server

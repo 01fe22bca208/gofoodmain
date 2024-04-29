@@ -1,0 +1,144 @@
+.body{
+    margin: 0;
+    padding: 0;
+    /* Dark blue-black color for the night sky */
+    background-color: blue;
+    background-image: url('./o.jpg'); /* Background image of nature */
+    background-size: cover;
+    background-position: center;
+    color: darkgreen; /* Chocolate color for text */
+    font-family: "Poppins", sans-serif;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for form */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.center h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: darkgreen; /* Chocolate color */
+}
+
+.txt_field {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid darkgreen; /* Chocolate color */
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: darkgreen; /* Chocolate color */
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+    top: -18px;
+    font-size: 14px;
+    color: darkgreen; /* Chocolate color */
+}
+
+.txt_field input:focus ~ span:before,
+.txt_field input:valid ~ span:before {
+    width: 100%;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+    color:darkgreen; /* Chocolate color */
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: darkgreen; /* Chocolate color */
+    transition: .5s;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: darkgreen; /* Chocolate color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: background .3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #8B4513; /* Darker shade of chocolate */
+}
+
+.signup_link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup_link span {
+    color: darkgreen; /* Chocolate color */
+}
+
+.signup_link a {
+    color: darkgreen; /* Chocolate color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.signup_link a:hover {
+    color: black; /* Darker shade of chocolate */
+    text-decoration: underline;
+}
+this is Login.css.container {
+  background-color: white;
+  color: black;
+  font-family: "Poppins, sans-serif";
+}
+
+.form-label {
+  color:black;
+}
+
+.form-control {
+  color: black;
+}
+
+.btn-success {
+  background-color: black;
+  color:black;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: background .3s ease;
+}
+
+.btn-danger {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
